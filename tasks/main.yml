@@ -40,8 +40,8 @@
   redhat_subscription:
     force_register: false
     state: present
-    username: "{{ redhat_user }}"
-    password: "{{ redhat_pass }}"
+    username: "{{ redhat_username }}"
+    password: "{{ redhat_password }}"
     pool_ids: "{{ redhat_pool_ids }}"
   tags: register_system
   register: register_system
